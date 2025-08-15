@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="seting.css">
+</head>
+<body>
+    <div class="center-box">
+        <h2>Настройки</h2>
+
+        <div class="color-container">
+            <label for="color-picker">Цвет фона:</label>
+            <input type="color" id="color-picker" value="#000000">
+        </div>
+
+        <div class="opacity-container">
+            <label for="opacity-range">Прозрачность:</label>
+            <input type="range" id="opacity-range" min="0" max="100" value="50">
+            <span id="opacity-value">50%</span>
+        </div>
+
+        <div class="theme-container">
+            <label>Тема:</label>
+            <button id="theme-btn">🌙</button>
+        </div>
+    </div>
+
+    <script src="seting.js"></script>
+</body>
+</html>

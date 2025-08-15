@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    font-family: Arial, sans-serif;
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;   /* возвращено */
+    height: 600px;  /* возвращено */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.color-container,
+.opacity-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+input[type="color"] {
+    width: 60px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#opacity-value {
+    width: 40px;
+    text-align: center;
+}

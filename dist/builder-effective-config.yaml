@@ -1,29 +1,3 @@
-directories:
-  output: dist
-  buildResources: ico
-appId: com.kyka.powercontrol
-productName: PowerControl
-files:
-  - filter:
-      - '**/*'
-      - '!node_modules/*'
-      - '!config.json'
-      - ico/**/*
-      - power_actions.py
-extraResources:
-  - from: config.json
-  - from: power_actions.py
-win:
-  target: nsis
-  icon: ico/icon.ico
-  forceCodeSigning: false
-  signAndEditExecutable: false
-nsis:
-  oneClick: false
-  allowToChangeInstallationDirectory: true
-  runAfterFinish: true
-  createDesktopShortcut: true
-  createStartMenuShortcut: true
-  perMachine: true
-  shortcutName: PowerControl
-electronVersion: 37.2.6
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fe910b2be78092265139451cc0dfc131b55d8d2b288f5b8313de78e67628f12
+size 617
